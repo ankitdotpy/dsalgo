@@ -13,6 +13,14 @@ class LinkedList{
 public:
 	struct node *head = nullptr;
 
+	LinkedList(){
+		head = nullptr;
+	}
+
+	LinkedList(struct node *head){
+		this->head = head;
+	}
+	
 	void insertNode(int data){
 		struct node *newNode = new node(data);
 		if(!head){
